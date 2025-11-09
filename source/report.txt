@@ -1,0 +1,4 @@
+My project report
+Automatic Backup System Project
+This script automates the backup process by archiving source files
+into a timestamped tar file. It is implemented using Bash scripting.

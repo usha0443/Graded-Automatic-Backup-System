@@ -1,0 +1,5 @@
+Important notes
+Backup system notes:
+- The script uses tar command.
+- Source files are stored in the source folder.
+- Backup files are saved in the backups folder.
