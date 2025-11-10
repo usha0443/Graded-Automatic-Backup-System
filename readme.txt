@@ -1,14 +1,22 @@
-Project: Automatic Backup System
-Language: Bash Scripting
-Objective: To automatically create timestamped backups of source files.
+Graded Task: Automatic Backup System
 
-Steps to Run:
-1. Place all your important files inside the "source" folder.
-2. Run the script using:
+Description
+This Bash script automatically creates a backup of a specified folder into a timestamped archive (.tar) file.
+
+Features
+- Checks if the source folder exists
+- Creates backup folder automatically
+- Backs up data with timestamp
+- Displays success message with backup path
+
+How to Run
+1. Open Git Bash in the project folder.
+2. Run:
    chmod +x backup.sh
    ./backup.sh
-3. The backup will be stored in the "backups" folder with a timestamped name.
+3. The backup file is saved inside the “backups” folder.
 
-Output Example:
+Output
 Backup completed successfully.
-Backup saved at: /mnt/c/Users/Lenovo/Documents/Graded Automatic Backup System/backups/backup_2025-11-09_12-05-30.tar
+Backup saved at: /mnt/c/Users/Lenovo/Documents/Graded_Automatic_Backup_System/backups/backup_2025-11-10_13-22-54.tar
+

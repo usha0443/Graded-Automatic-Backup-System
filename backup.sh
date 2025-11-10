@@ -7,7 +7,7 @@ BACKUP_DIR="/mnt/c/Users/Lenovo/Documents/Graded Automatic Backup Systems/backup
 # Ensure folders exist
 if [[ ! -d "$SOURCE_DIR" ]]; then
   echo "ERROR: SOURCE_DIR does not exist: $SOURCE_DIR"
-  exit 1
+  exit 1   
 fi
 mkdir -p "$BACKUP_DIR"
 
