@@ -1,21 +1,21 @@
-#!/bin/bash
-set -euo pipefail
+# ==========================
+# Backup System Configuration
+# ==========================
 
-SOURCE_DIR="/mnt/c/Users/Lenovo/Documents/Graded Automatic Backup Systems/source"
-BACKUP_DIR="/mnt/c/Users/Lenovo/Documents/Graded Automatic Backup Systems/backups"
+# Source directory to back up
+SOURCE_DIR="${1:-/home/usha/Documents}"
 
-# Ensure folders exist
-if [[ ! -d "$SOURCE_DIR" ]]; then
-  echo "ERROR: SOURCE_DIR does not exist: $SOURCE_DIR"
-  exit 1   
-fi
-mkdir -p "$BACKUP_DIR"
+# Backup destination folder
+BACKUP_DIR="/home/usha/backups"
 
-ts=$(date +"%Y-%m-%d_%H-%M-%S")
-BACKUP_FILE="$BACKUP_DIR/backup_$ts.tar"
+# Log file location
+LOG_FILE=backup.log
 
-# Create the archive from inside the source directory (safe with spaces)
-tar -cf "$BACKUP_FILE" -C "$SOURCE_DIR" .
+# Retention policy (days)
+RETENTION_DAYS=7
 
-echo "Backup completed successfully."
-echo "Backup saved at: $BACKUP_FILE"
+# Minimum free space required (in MB)
+MIN_FREE_SPACE=500
+
+# Simulated email alert log file
+ALERT_LOG=alert.log
